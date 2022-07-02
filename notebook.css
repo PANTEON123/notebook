@@ -1,0 +1,122 @@
+#window{
+    background:linear-gradient(to right, blue, pink) ;
+}
+
+#header{
+    text-align: center;
+    margin-top: 40px;
+    font-family: Lucida Console;
+    font-size: 20px;
+    color: aliceblue;
+    text-shadow:0 0 10px rgb(248, 247, 247);
+}
+
+.inpMessage{
+    width: 300px;
+    height: 24px;
+    border-radius: 1px;
+    border-color: rgb(132, 135, 138);
+    border-style: solid;
+    border: 1px;
+}
+.inpMessage:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.butAddition{
+    height: 26px;
+    width: 35px;
+    border-radius: 1px;
+    border-color: rgb(132, 135, 138);
+    border-style: solid;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+}
+
+.butAddition:hover {
+    cursor: pointer;
+}
+
+#content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#plus{
+    width: 15px;
+    height: 15px;
+}
+
+#tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  flex-direction: column;
+}
+
+.taskBut{
+    height: 26px;
+    width: 35px;
+    border-radius: 1px;
+    border-color: rgb(132, 135, 138);
+    border-style: solid;
+    border: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#taskInp{
+    width: 200px;
+    max-width: auto;
+    height: 24px;
+    border-radius: 1px;
+    border-color: rgb(132, 135, 138);
+    border-style: solid;
+    border: 1px;
+}
+
+#taskInp:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.taskBut:hover {
+    cursor: pointer;
+}
+
+#leftBut{
+    margin-left: auto;
+    background-color: rgba(139, 201, 255, 0.932);
+}
+
+#rightBut{
+    background-color: rgb(194, 155, 255);
+}
+
+img{
+    width: 15px;
+    height: 15px; 
+}
+.listTask{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 200px;
+    background-color: aliceblue;
+    padding-left: 15px;
+    width: 400px;
+
+}
+.active{
+    text-decoration-line: line-through;
+}

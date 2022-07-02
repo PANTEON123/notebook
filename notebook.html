@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./notebook.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Notebook</title>
+</head>
+<body id="window">
+    <div id="space">
+        <div>
+            <div id="header">{{textHeader}}</div>
+            <div id="content">
+            <input class="inpMessage" type="text"  placeholder="add a task" v-model="connection" >
+            <button class="butAddition"> <img src="https://cdn-icons-png.flaticon.com/512/7827/7827072.png" id="plus" @click="addTask"></button>
+            </div>
+        </div>
+        <!-- <div id="tasks">
+            <input type="text" id="taskInp">
+            <button id="leftBut" class="taskBut"><img src="https://cdn-icons-png.flaticon.com/512/7783/7783028.png" alt=""></button>
+            <button id="rightBut" class="taskBut"><img src="" alt=""></button>            
+        </div> -->
+        <ul id="tasks">
+            <li v-for="(task, index) in taskas" :key="taskas.message" class="listTask" :class="{active:task.del}">
+                <span class="made" :class="{active: task.mode}">{{task.message}}</span>
+                <button id="leftBut" class="taskBut" @click="task.mode = !task.mode"><img src="https://cdn-icons-png.flaticon.com/512/7783/7783028.png"></button>
+                <button id="rightBut" class="taskBut" @click="removeElement(index)"><img src="https://cdn-icons.flaticon.com/png/512/484/premium/484662.png?token=exp=1656697303~hmac=2fd5147da271ad94eb5cd7479a560b4f" alt=""></button>
+            </li>
+        </ul>
+    </div>
+    <script src="./notebook.js"></script>
+</body>
+</html>
