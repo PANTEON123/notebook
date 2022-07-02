@@ -4,8 +4,6 @@ var vm = new Vue({
         textHeader: 'List of my tasks or to-dos',
         taskas: [
             {message:'Покормить кота', mode: false},
-            {message:'Покормить Настю', mode: false},
-            {message:'23', mode: false},
         ],
         connection: '',
         styleObject: {
